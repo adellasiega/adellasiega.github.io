@@ -81,3 +81,33 @@ footer {
   border-top: 3px ridge #c0c0c0;
   padding: 10px 0;
 }
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  background: #c0c0c0;
+  border: 3px outset #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000;
+}
+.badge-text {
+  display: flex;
+  flex-direction: column;
+}
+.badge-title {
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 18px;
+  border-bottom: 2px groove #ffffff;
+}
+.badge-sub {
+  font-size: 11px;
+  font-weight: bold;
+  font-style: italic;
+  color: #000080;
+}
+.badge-icon {
+	display: block;
+	flex-shrink: 0;
+}
