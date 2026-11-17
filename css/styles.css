@@ -1,113 +1,48 @@
-/* ~2001 personal homepage: no gradients, no shadows, no rounded corners */
-
+/* The whole page: navy background, white text */
 body {
-  margin: 8px;
   background-color: #000080;
-  /* tiled "starfield" background */
-  background-image:
-    radial-gradient(#ffffff 1px, transparent 1px),
-    radial-gradient(#ffff99 1px, transparent 1px);
-  background-size: 40px 40px, 70px 70px;
-  background-position: 0 0, 20px 35px;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 16px;
   color: #ffffff;
+  font-size: 16px;
 }
 
+/* Keep the header and main content in a 640px column, centered */
 header,
-main,
-footer {
+main {
   width: 640px;
   margin: 0 auto;
 }
 
+/* Top of the page */
 header {
   text-align: center;
-  padding: 10px 0;
-  border-bottom: 3px ridge #c0c0c0;
+  border-bottom: 3px solid #c0c0c0;
 }
 
-header h1 {
-  margin: 10px 0;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+/* The big "Hello, world!" title */
+h1 {
   font-size: 40px;
   color: #ffff00;
 }
 
-header p {
-  margin: 0;
-  color: #00ff00;
-  font-style: italic;
-}
-
-main {
-  padding: 15px 0;
-}
-
+/* Each gray box ("About Me", "Projects") */
 section {
-  background: #c0c0c0;
+  background-color: #c0c0c0;
   color: #000000;
-  border: 3px outset #ffffff;
-  padding: 2px;
-  margin-bottom: 20px;
+  border: 3px solid #ffffff;
+  margin-top: 20px;
 }
 
-section h2 {
-  margin: 0 0 8px;
-  padding: 2px 6px;
-  background: #000080;
+/* The navy title bar at the top of each box */
+h2 {
+  background-color: #000080;
   color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
-  font-weight: bold;
+  margin: 0;
+  padding: 4px 8px;
 }
 
-section p,
-section ul {
-  margin: 8px 10px;
-}
-
-a {
-  color: #0000ff;
-}
-a:visited {
-  color: #800080;
-}
-
-footer {
-  text-align: center;
-  font-size: 12px;
-  color: #c0c0c0;
-  border-top: 3px ridge #c0c0c0;
-  padding: 10px 0;
-}
-
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 6px 10px;
-  background: #c0c0c0;
-  border: 3px outset #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #000000;
-}
-.badge-text {
-  display: flex;
-  flex-direction: column;
-}
-.badge-title {
-  font-family: "Arial Black", Arial, sans-serif;
-  font-size: 18px;
-  border-bottom: 2px groove #ffffff;
-}
-.badge-sub {
-  font-size: 11px;
-  font-weight: bold;
-  font-style: italic;
-  color: #000080;
-}
-.badge-icon {
-	display: block;
-	flex-shrink: 0;
+/* Text and lists inside the boxes */
+p,
+ul {
+  margin: 10px;
 }
